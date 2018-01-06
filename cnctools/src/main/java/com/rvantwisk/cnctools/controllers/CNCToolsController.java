@@ -346,7 +346,7 @@ public class CNCToolsController extends AbstractController {
 
         ToolParameter nt = Factory.newTool();
         nt.setName("6MM end Mill");
-        mt.setMilltaskModel(new RoundStockModel(new SimpleStringProperty(""), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0)));
+        mt.setMilltaskModel(new RoundStockModel(new SimpleStringProperty("60a9a689-8f94-4a08-b73f-ebe14cdf044e"), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0)));
         p.millTasksProperty().add(mt);
 
         mt = new TaskRunnable("Make Square", "Make round stock square", "com.rvantwisk.cnctools.operations.createRoundStock.CreateRoundStockController", "CreateRoundStock.fxml");
@@ -355,7 +355,7 @@ public class CNCToolsController extends AbstractController {
         nt.radialDepthProperty().set(DimensionProperty.DimMM(4.0));
         nt.axialDepthProperty().set(DimensionProperty.DimMM(4.0));
         nt.setToolType(new EndMill(new DimensionProperty(8.0, Dimensions.Dim.MM)));
-        mt.setMilltaskModel(new RoundStockModel(new SimpleStringProperty(""), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0)));
+        mt.setMilltaskModel(new RoundStockModel(new SimpleStringProperty("60a9a689-8f94-4a08-b73f-ebe14cdf044e"), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0)));
         p.millTasksProperty().add(mt);
 
 
@@ -366,7 +366,7 @@ public class CNCToolsController extends AbstractController {
         nt.radialDepthProperty().set(DimensionProperty.DimMM(5.0));
         nt.axialDepthProperty().set(DimensionProperty.DimMM(5.0));
         nt.setToolType(new EndMill(new DimensionProperty(10.0, Dimensions.Dim.MM)));
-        mt.setMilltaskModel(new RoundStockModel(new SimpleStringProperty(""), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0)));
+        mt.setMilltaskModel(new RoundStockModel(new SimpleStringProperty("60a9a689-8f94-4a08-b73f-ebe14cdf044e"), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0)));
         p.millTasksProperty().add(mt);
         projectModel.addProject(p);
 

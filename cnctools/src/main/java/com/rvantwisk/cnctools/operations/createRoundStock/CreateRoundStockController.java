@@ -125,7 +125,7 @@ public class CreateRoundStockController implements MillTaskController {
         model.stockSizeProperty().set(iStockSize.dimensionProperty());
     }
 
-    private void modelToForm() {
+    private void modelToForm() {//TODO
         selectOrEditTool.setTool(toolDBManager.getByID(model.getToolID()));
         iFinalLength.dimensionProperty().set(model.finalLengthProperty());
         iFinalSize.dimensionProperty().set(model.finalSizeProperty());

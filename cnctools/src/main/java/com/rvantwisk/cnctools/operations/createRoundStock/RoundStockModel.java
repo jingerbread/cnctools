@@ -121,12 +121,12 @@ public class RoundStockModel implements TaskModel {
     }
 
     @Override
-    public TaskModel copy() {
-        RoundStockModel n = new RoundStockModel();
+    public TaskModel copy() {//TODO
+        RoundStockModel n = new RoundStockModel(new SimpleStringProperty("60a9a689-8f94-4a08-b73f-ebe14cdf044e"), DimensionProperty.DimMM(30.0), DimensionProperty.DimMM(20.0), DimensionProperty.DimMM(100.0));
         n.stockSizeProperty().set(this.stockSizeProperty());
         n.finalLengthProperty().set(this.finalLengthProperty());
         n.finalSizeProperty().set(this.finalSizeProperty());
-        n.toolIDProperty().set(this.toolIDProperty().get());
+       //todo n.toolIDProperty().set(this.toolIDProperty().get());
         return n;
     }
 

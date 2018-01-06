@@ -113,7 +113,7 @@ Simply run:
 rvt@rvt:~/cnctools$ cd cnctools
 rvt@rvt:~/cnctools/cnctools$ export _JAVA_OPTIONS="-Djava.library.path=target/natives -Xmx256m -XX:+UseConcMarkSweepGC -XX:MaxPermSize=64m -Xss1m"
 rvt@rvt:~/cnctools/cnctools$ mvn jfx:jar
-rvt@rvt:~/cnctools/cnctools$ java -jar target/jfx/app/cnctools-1.0.0-ALPHA-jfx.jar 
+rvt@rvt:~/cnctools/cnctools$ java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 -jar target/jfx/app/cnctools-1.0.0-ALPHA-jfx.jar  
 </pre>
 
 
