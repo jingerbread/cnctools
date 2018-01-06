@@ -9,10 +9,6 @@
     <version>1.0.0-ALPHA</version>
     <packaging>pom</packaging>
 
-    <prerequisites>
-        <maven>3.0.3</maven>
-    </prerequisites>
-
     <name>CNC Tools</name>
 
     <properties>
@@ -25,32 +21,7 @@
         <module>gcodegenerator</module>
         <module>gcodeparser</module>
         <module>cnctools</module>
-        <module>openvoronoi</module>
     </modules>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.3.1</version>
-                <executions>
-                    <execution>
-                        <id>enforce-maven</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <version>[3.0.3,3.0.99]</version>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

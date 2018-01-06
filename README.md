@@ -7,13 +7,13 @@ CNCTools - A G-Code editor, parser and transformer written in java.
 
 Compilation instructions
 ========
-You need to have a recent version of Java 7 insatlled on your system before you can build cnctools
+You need to have a recent version of Java 8 installed on your system before you can build cnctools
 You can verify this by entering on your command promot 'java -version', you should see something like:
 
 <pre>
-java version "1.7.0_45"
-Java(TM) SE Runtime Environment (build 1.7.0_45-b18)
-Java HotSpot(TM) 64-Bit Server VM (build 24.45-b08, mixed mode)
+java version "1.8.0_91"
+Java(TM) SE Runtime Environment (build 1.8.0_91-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.91-b14, mixed mode)
 </pre>
 
 Get a clone of CNC tools using, I choose my home directory for explanation, but you might want to choose a better location for your perpose.
@@ -112,7 +112,8 @@ Simply run:
 <pre>
 rvt@rvt:~/cnctools$ cd cnctools
 rvt@rvt:~/cnctools/cnctools$ export _JAVA_OPTIONS="-Djava.library.path=target/natives -Xmx256m -XX:+UseConcMarkSweepGC -XX:MaxPermSize=64m -Xss1m"
-rvt@rvt:~/cnctools/cnctools$ mvn jfx:run
+rvt@rvt:~/cnctools/cnctools$ mvn jfx:jar
+rvt@rvt:~/cnctools/cnctools$ java -jar target/jfx/app/cnctools-1.0.0-ALPHA-jfx.jar 
 </pre>
 
 
@@ -125,7 +126,7 @@ beta and release candidates, if you feel this is important please drop me a note
 
 TODO
 ========
-* Stabalise the g-code generator so it will beaser to generate gcode in little snippets
+* Stabilise the g-code generator so it will be easier to generate gcode in little snippets
 * Groovy based dialog's and that can hook into CNCtool without re-compiling
 * Various tools like facing, pocketing
 * DXF to G-Code generator
