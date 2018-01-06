@@ -113,3 +113,8 @@ Screenshot
 Example showing 3 operations executed after eachother for one project.
 In this case 3 pocket's at different depth's.
 ![G-Code editor with life preview](http://skitch.rvantwisk.nl/~rvt/blog/AppMain-20140121-213213.png)
+
+Fresh screenshot
+========
+![G-Code editor stock model edit](https://github.com/jingerbread/cnctools/blob/master/cnctools-edit-model.png)
+
