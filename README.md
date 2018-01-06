@@ -32,7 +32,7 @@ rvt@rvt:~$ cd cnctools
 rvt@rvt:~/cnctools$
 </pre>
 
-After that you can compile with: **mvn clean install** and you will end up with a jar file in the target directory under **/cnctools/target**
+After that you can compile with: **mvn clean install -DskipTests=true** 
 
 Please note that the first compilation might take a while to download all needed libraries. However, after that they are cached and compilation should be quickly (seconds).
 
@@ -67,38 +67,6 @@ rvt@rvt:~/cnctools$ mvn install
 [INFO] ------------------------------------------------------------------------
 rvt@rvt:~/cnctools$
 </pre>
-
-_Note 1:_
-_On OS/X and Linux you need to do one extra step to ensure the JavaFX environment is setup properly, see also : http://zenjava.com/javafx/maven/fix-classpath.html_
-
-<pre>
-rvt@rvt:~$ sudo bash
-root@rvt:~# export JAVA_HOME=$(/usr/libexec/java_home -v1.7)
-root@rvt:~# mvn com.zenjava:javafx-maven-plugin:2.0:fix-classpath
-[INFO] Scanning for projects...
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Maven Stub Project (No POM) 1
-[INFO] ------------------------------------------------------------------------
-[INFO]
-[INFO] --- javafx-maven-plugin:2.0:fix-classpath (default-cli) @ standalone-pom ---
-..
-..
-Are you sure you want to continue? (y/n)
-y
-[WARNING] Fixing JRE bootclasspath to include JavaFX runtime and native files
-[WARNING] All applications using JRE will be affected: ....../jdk1.7.0_45.jdk/Contents/Home/jre
-[INFO] JFX Runtime JAR already exists in the JRE extensions directory, no action was taken (...../jdk1.7.0_45.jdk/Contents/Home/jre/lib/ext/jfxrt.jar)
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.048s
-[INFO] Finished at: Mon Jan 13 20:04:30 ECT 2014
-[INFO] Final Memory: 7M/310M
-[INFO] ------------------------------------------------------------------------
-root@rvt:~# exit
-</pre>
-
 
 _Note 2:_
 If you are planning to make changes you can re-compile the project without issuing **clean** just use **mvn install**, then
